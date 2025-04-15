@@ -18,6 +18,25 @@ This project is a task manager application that includes functionalities for man
 4. **Build the Project**: Run `dotnet build` to build the project.
 5. **Run the Project**: Execute `dotnet run` to start the application.
 
+## Testing
+
+Unit tests are included in the `TaskTracker.Tests` project but are **not part of the published release**.
+
+To view and run tests locally:
+
+1. Clone the full repository (not just the release zip)
+2. Navigate to the solution directory
+3. Run `dotnet test`
+
+This project includes **19 fully runnable unit tests** for the core model classes (`TaskItem`, `Invoice`, `Payment`). These tests cover:
+
+- Constructor behavior  
+- Property validation  
+- Logical conditions (e.g., overdue tasks, payment status)
+
+For service classes that rely on `Console.ReadLine()` and `Console.WriteLine()`, test stubs are included but commented out with explanations. These methods are not testable without modifying the source code and are intentionally left untouched.
+
+
 ## Future Improvements
 - Refactor the code to ensure that tests are fully functional.
 - Implement additional features and improve the overall functionality of the application.
