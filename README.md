@@ -1,45 +1,78 @@
-# CS690-FinalProject--
-Rebuilt to actually work
+# TaskTracker – CS690 Final Project
 
-**Original Repo Here: https://github.com/russ-mccuen/CS690-FinalProject**
+This is the rebuilt and functional version of the TaskTracker application.
 
-# TaskTracker Project
+> **Original Repository (for historical reference):**  
+> [https://github.com/russ-mccuen/CS690-FinalProject](https://github.com/russ-mccuen/CS690-FinalProject)
+
+---
 
 ## Overview
-This project is a task manager application that includes functionalities for managing tasks, invoices, and payments. It also includes features for tracking completed tasks, viewing tasks due today, and handling invoices and payments.
+
+TaskTracker is a modular command-line application that allows users to:
+
+- Add, complete, and view tasks
+- Track completed and overdue items
+- Create and manage invoices
+- Record and apply payments
+- View tasks sorted by due date
+
+All data is saved in local `.json` files for persistence across sessions.
+
+---
 
 ## Version History
-- **v2.0.1**: Latest release with completed task functionality, invoice and payment tracking, and the necessary infrastructure for testing. Rebuilt from 2.0.0 due to erro in initial build which prevented building with tests.
 
-## How to Run the Project
-1. **Download the ZIP**: To avoid issues with broken tests, download the ZIP file of the repository, which contains the fully functional code excluding the broken tests.
-2. **Extract the ZIP**: Extract the ZIP file to a directory of your choice.
-3. **Open the Project**: Open the project in Visual Studio Code or your preferred IDE.
-4. **Build the Project**: Run `dotnet build` to build the project.
-5. **Run the Project**: Execute `dotnet run` to start the application.
+- **v2.0.0** – Current release with:
+  - Full feature set implemented
+  - Clean separation of concerns
+  - User Guide and Deployment Documentation added
+  - Tests moved out of published build to allow successful publishing
+
+---
+
+## How to Run the Application
+
+Follow the steps in the [Deployment Document](https://github.com/russ-mccuen/CS690-FinalProject--/wiki/Deployment-Document) to install the .NET runtime, download the release zip, and run the application from the terminal.  
+
+No cloning or compilation required.
+
+---
+
+## Documentation
+
+- [User Guide](https://github.com/russ-mccuen/CS690-FinalProject--/wiki/User-Guide) – Walkthrough of all features with screenshots
+- [Deployment Document](https://github.com/russ-mccuen/CS690-FinalProject--/wiki/Deployment-Document)
+
+---
 
 ## Testing
 
 Unit tests are included in the `TaskTracker.Tests` project but are **not part of the published release**.
 
-To view and run tests locally:
+To run tests:
 
-1. Clone the full repository (not just the release zip)
-2. Navigate to the solution directory
-3. Run `dotnet test`
+1. Clone this repository (not the release zip)
+2. Navigate to the solution folder
+3. Run:
 
-This project includes **19 fully runnable unit tests** for the core model classes (`TaskItem`, `Invoice`, `Payment`). These tests cover:
+   ```bash
+   dotnet test
+   ```
 
-- Constructor behavior  
-- Property validation  
-- Logical conditions (e.g., overdue tasks, payment status)
+### Test Coverage Includes:
 
-For service classes that rely on `Console.ReadLine()` and `Console.WriteLine()`, test stubs are included but commented out with explanations. These methods are not testable without modifying the source code and are intentionally left untouched.
+- Core model classes (`TaskItem`, `Invoice`, `Payment`)
+- Constructor behavior, data validation, and business logic
 
+Tests for `TaskService` and `InvoiceService` are stubbed but commented out, as they rely on `Console.ReadLine()` and would require refactoring to test properly.
+
+---
 
 ## Future Improvements
-- Refactor the code to ensure that tests are fully functional.
-- Implement additional features and improve the overall functionality of the application.
 
-Thank you for using the TaskTracker project!
+Further improvements may be considered after the final submission depending on scope and feedback.
 
+---
+
+**Thank you for reviewing TaskTracker v2.0.0!**
