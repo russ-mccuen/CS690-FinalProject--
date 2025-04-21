@@ -12,7 +12,7 @@ class Program
         while (true)
         {
             Console.Clear();
-            Console.WriteLine("Task Manager v2.0.0\n");
+            Console.WriteLine("Task Manager v3.0.0\n");
             Console.WriteLine("1. View today's tasks");
             Console.WriteLine("2. Add new task");
             Console.WriteLine("3. Complete task");
