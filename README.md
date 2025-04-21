@@ -78,4 +78,4 @@ Further improvements may be considered after the final submission depending on s
 
 ---
 
-**Thank you for reviewing TaskTracker v2.0.0!**
+**Thank you for reviewing TaskTracker v3.0.0!**
