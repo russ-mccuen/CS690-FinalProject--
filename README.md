@@ -26,7 +26,7 @@ All data is saved in local `.json` files for persistence across sessions.
 - **v3.0.0** – Current release with:
   - Full feature set implemented
   - Clean separation of concerns
-  - User Guide and Deployment Documentation added
+  - User Guide, Deployment Documentation, and Developer Documentation added
   - Tests moved out of published build to allow successful publishing
 
 - **v2.0.0**
@@ -45,6 +45,7 @@ No cloning or compilation required.
 
 - [User Guide](https://github.com/russ-mccuen/CS690-FinalProject--/wiki/User-Guide) – Walkthrough of all features with screenshots
 - [Deployment Document](https://github.com/russ-mccuen/CS690-FinalProject--/wiki/Deployment-Document)
+- [Developer Documentation](https://github.com/russ-mccuen/CS690-FinalProject--/wiki/Developer-Documentation)
 
 ---
 
