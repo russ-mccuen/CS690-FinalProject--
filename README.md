@@ -23,11 +23,13 @@ All data is saved in local `.json` files for persistence across sessions.
 
 ## Version History
 
-- **v2.0.0** – Current release with:
+- **v3.0.0** – Current release with:
   - Full feature set implemented
   - Clean separation of concerns
   - User Guide and Deployment Documentation added
   - Tests moved out of published build to allow successful publishing
+
+- **v2.0.0**
 
 ---
 
